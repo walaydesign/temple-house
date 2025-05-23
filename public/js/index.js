@@ -11,6 +11,98 @@ $(".btn-top").click(function(){
     $("html, body").animate({scrollTop: 0},300);
 })
 
+var swiperCulture = new Swiper(".culture_swiper", {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: "#culture_swiper-next",
+        prevEl: "#culture_swiper-prev",
+    },
+    speed: 1000,
+    allowTouchMove: false,
+    pagination: {
+        el: "#culture_swiper-pagination",
+        clickable: true,
+    },
+})
+
+$(".culture .slider_btn button").click(function(){
+    $(this).addClass("active").siblings("button").removeClass("active");
+    let btn_index = $(this).index();
+    swiperCulture.slideTo(btn_index, 1000, true);
+})
+
+var swiperTransport = new Swiper(".transport_swiper", {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: "#transport_swiper-next",
+        prevEl: "#transport_swiper-prev",
+    },
+    speed: 1000,
+    allowTouchMove: false,
+    pagination: {
+        el: "#transport_swiper-pagination",
+        clickable: true,
+    },
+})
+
+var swiperNature = new Swiper(".nature_swiper", {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: "#nature_swiper-next",
+        prevEl: "#nature_swiper-prev",
+    },
+    speed: 1000,
+    allowTouchMove: false,
+    pagination: {
+        el: "#nature_swiper-pagination",
+        clickable: true,
+    },
+})
+
+$(".nature .slider_btn button").click(function(){
+    $(this).addClass("active").siblings("button").removeClass("active");
+    let btn_index = $(this).index();
+    swiperNature.slideTo(btn_index, 1000, true);
+})
+
+var swiperConvenient = new Swiper(".convenient_swiper", {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: "#convenient_swiper-next",
+        prevEl: "#convenient_swiper-prev",
+    },
+    speed: 1000,
+    allowTouchMove: false,
+    pagination: {
+        el: "#convenient_swiper-pagination",
+        clickable: true,
+    },
+})
+
+var swiperBuilding = new Swiper(".building_swiper", {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: ".building_swiper-next",
+        prevEl: ".building_swiper-prev",
+    },
+    effect: "fade",
+    speed: 1000,
+    fadeEffect: {
+        crossFade: true,
+    },
+})
+
+
+
+
+
+
+
+
+
+
+
+
 var swiperCore = new Swiper(".core_swiper", {
     slidesPerView: 1,
     navigation: {
