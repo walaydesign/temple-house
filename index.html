@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>368齋明居</title>
+        <meta property="og:image" content="./public/img/share.jpg" />
+        <meta property="og:url" content="./public/img/share.jpg" />
+        <meta property="og:image" content="./public/img/share.jpg" />
+        <meta property="og:url" content="./public/img/share.jpg" />
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./public/css/aos/aos.css">
+        <link rel="stylesheet" href="./public/css/style.css">
+    </head>
+<body>
+    <header class="header d-sm-block d-none">
+        <nav class="header_nav">
+            <ul class="d-flex align-items-center justify-content-center">
+                <li class="header_item" data-target="#aesthetics">黃金地段</li>
+                <li class="header_item" data-target="#technology">便捷交通</li>
+                <li class="header_item" data-target="#transport">生活機能</li>
+                <li class="header_item" data-target="#map">建築美學</li>
+                <li class="header_item" data-target="#architecture">368建設</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="contact_title">
+                    <h2>預約賞屋</h2>
+                    <div class="title-deco w-100">
+                        <div class="title-deco_line"></div>
+                        <div class="title-deco_circle"></div>
+                    </div>
+                </div>
+                <form class="contact_form" onsubmit="sendEmail(); reset(); return false">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact_input">
+                                <label for=""><span>姓</span><span>名</span></label>
+                                <div class="contact_input_inner">
+                                    <input type="text" id="name" required>
+                                </div>
+                            </div>
+                            <div class="contact_input">
+                                <label for=""><span>聯</span><span>絡</span><span>電</span><span>話</span></label>
+                                <div class="contact_input_inner">
+                                    <input type="phone" id="phone" required>
+                                </div>
+                            </div>
+                            <div class="contact_input">
+                                <label for=""><span>LINE</span><span>ID</span></label>
+                                <div class="contact_input_inner">
+                                    <input type="text" id="line">
+                                </div>
+                            </div>
+                            <div class="contact_input">
+                                <label for=""><span>居</span><span>住</span><span>地</span></label>
+                                <div class="contact_input_inner">
+                                    <input type="text" id="area" placeholder="縣市/鄉鎮">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contact_textarea">
+                                <div class="contact_textarea_wrapper">
+                                    <div class="contact_textarea_inner">
+                                        <textarea placeholder="請輸入您的留言(選填)" name="" id="message" cols="30" rows="5"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input id="submit" type="submit" value="立即預約"/>
+                </form>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer_top">
+                <h2 data-aos="fade-right" data-aos-duration="1000">建案資訊</h2>
+                <div class="footer_inform">
+                    <div class="d-md-flex align-items-end">
+                        <ul class="footer_inform_list">
+                            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                                <p class="footer_inform_title">房型規劃</p>
+                                <p class="footer_inform_content">
+                                    15坪 多功能精品宅
+                                </p>
+                            </li>
+                            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="250">
+                                <p class="footer_inform_title">預約專線</p>
+                                <p class="footer_inform_content">03-3808666</p>
+                            </li>
+                            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="250">
+                                <p class="footer_inform_title">接待會館</p>
+                                <p class="footer_inform_content">桃園市大溪區員林路二段200-1號</p>
+                            </li>
+                        </ul>
+                        <ul class="footer_inform_list">
+                            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
+                                <p class="footer_inform_title">坪數規劃</p>
+                                <p class="footer_inform_content">15坪</p>
+                            </li>
+                            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                                <p class="footer_inform_title">基地位置</p>
+                                <p class="footer_inform_content">桃園市大溪區齋明街18號對面</p>
+                            </li>
+                            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                                <p class="footer_inform_title">建設公司</p>
+                                <p class="footer_inform_content">三六八建設有限公司</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p>Design By <a href="https://zhuliads.com/" target="_blank">Zhuli 築里整合行銷</a></p>
+            </div>
+        </footer>
+    </main>
+
+    <div class="sideBtn d-xl-block d-flex">
+        <ul class="d-xl-block d-flex sideBtn_link">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=61574963944625&locale=zh_TW" target="_blank">
+                    <img src="./public/img/fb.webp" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://maps.app.goo.gl/6wuFbP5MrL32zmZv6" target="_blank">
+                    <img src="./public/img/address.webp" alt="">
+                    <span>基地位置</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://maps.app.goo.gl/PJEfJbnqhdbEy8mH8" target="_blank">
+                    <img src="./public/img/home.webp" alt="">
+                    <span>接待會館</span>
+                </a>
+            </li>
+            <li>
+                <a href="tel:03-3808666" target="_blank">
+                    <img src="./public/img/phone.webp" alt="">
+                </a>
+            </li>
+        </ul>
+        <ul class="d-xl-block d-flex sideBtn_top">
+            <li>
+                <a class="btn-top">
+                    <img src="./public/img/top.webp" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/aos/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js?v=20240527"></script>
+    <script src="./public/js/index.js"></script>
+</body>
+</html>
