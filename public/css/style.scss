@@ -41,6 +41,7 @@ input, select, textarea, button {
 
 main {
     overflow: hidden;
+    padding-top: 44px;
     @media screen and (max-width: 767px) {
         padding-top: 0;
     }
@@ -75,6 +76,7 @@ img {
         padding: 0 15px;
         position: relative;
         transition: $transition-common;
+        font-family: $font-notosans;
         &::before {
             position: absolute;
             content: "";
@@ -93,6 +95,69 @@ img {
         &:hover {
             opacity: 0.7;
         }
+    }
+}
+
+.kv {
+    padding-top: 9.74vw;
+    padding-bottom: 7.81vw; 
+    &_slogan {
+        padding-left: 19.5%;
+    }
+    &_info {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    &_price {
+        position: relative;
+        h3 {
+            margin: 0;
+            line-height: 1;
+        }
+        &_num {
+            font-size: 170px;
+            font-weight: 700;
+            color: $primary-500;
+        }
+        &_unit {
+            font-size: 170px;
+            font-weight: 700;
+            color: $secondary-500;
+        }
+        &_from {
+            font-size: 55px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: $secondary-500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            position: absolute;
+            bottom: 0;
+            right: -27px;
+        }
+    }
+    &_room {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        border-bottom: ;
+        span {
+            font-size: 44px;
+            font-weight: 700;
+        }
+        &_text {
+            color: $secondary-500;
+        }
+        &_num {
+            color: $primary-500;
+        }
+    }
+    &_logo {
+        width: 305px;
     }
 }
 

@@ -36,6 +36,7 @@ input, select, textarea, button {
 
 main {
   overflow: hidden;
+  padding-top: 44px;
 }
 
 @media screen and (max-width: 767px) {
@@ -79,6 +80,7 @@ img {
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .header li::before {
@@ -99,6 +101,85 @@ img {
 
 .header li:hover {
   opacity: 0.7;
+}
+
+.kv {
+  padding-top: 9.74vw;
+  padding-bottom: 7.81vw;
+}
+
+.kv_slogan {
+  padding-left: 19.5%;
+}
+
+.kv_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.kv_price {
+  position: relative;
+}
+
+.kv_price h3 {
+  margin: 0;
+  line-height: 1;
+}
+
+.kv_price_num {
+  font-size: 170px;
+  font-weight: 700;
+  color: #EE731B;
+}
+
+.kv_price_unit {
+  font-size: 170px;
+  font-weight: 700;
+  color: #172851;
+}
+
+.kv_price_from {
+  font-size: 55px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #172851;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  right: -27px;
+}
+
+.kv_room span {
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.kv_room_text {
+  color: #172851;
+}
+
+.kv_room_num {
+  color: #EE731B;
+}
+
+.kv_logo {
+  width: 305px;
 }
 
 .contact {
