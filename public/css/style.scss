@@ -682,6 +682,12 @@ img {
                 top: 21.11vw;
                 right: 13.89vw;
             }
+            &-2 {
+                width: 58.06vw;
+                left: 0;
+                bottom: 28.61vw;
+                display: block;
+            }
         }
     }
     @media screen and (max-width: 767px) {
@@ -747,12 +753,6 @@ img {
             }
         }
         &_plant {
-            &-2 {
-                width: 58.06vw;
-                left: 0;
-                bottom: 28.61vw;
-                display: block;
-            }
         }
     }
 }
@@ -1179,6 +1179,7 @@ img {
 
 .architecture {
     padding-bottom: 200px;
+    position: relative;
     .title {
         &-en {
             margin-bottom: 60px;

@@ -784,6 +784,12 @@ img {
     top: 21.11vw;
     right: 13.89vw;
   }
+  .kv_plant-2 {
+    width: 58.06vw;
+    left: 0;
+    bottom: 28.61vw;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -853,12 +859,6 @@ img {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-  }
-  .kv_plant-2 {
-    width: 58.06vw;
-    left: 0;
-    bottom: 28.61vw;
-    display: block;
   }
 }
 
@@ -1352,6 +1352,7 @@ img {
 
 .architecture {
   padding-bottom: 200px;
+  position: relative;
 }
 
 .architecture .title-en {
