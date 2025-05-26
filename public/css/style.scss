@@ -3,7 +3,7 @@
 $primary-500: #EE731B;
 $secondary-500: #172851;
 $third-500: #025776;
-$text-color: #7B7B7B;
+$text-color: $secondary-500;
 $transition-common: 0.3s;
 $font-notoserif: 'Noto Serif TC', sans-serif;
 $font-notosans: 'Noto Sans TC', sans-serif;
@@ -38,6 +38,10 @@ input, select, textarea, button {
     border: 0;
     border-radius: 0;
     background-color: transparent;
+}
+
+button {
+    color: $secondary-500;
 }
 
 a {
@@ -614,16 +618,19 @@ img {
             width: 7.61vw;
             top: 10.18vw;
             right: 19.3vw;
+            animation: move-1 5s ease-in-out infinite alternate;
         }
         &-2 {
             width: 31.82vw;
             left: 1.71vw;
             bottom: 0;
+            animation: move-2 5s ease-in-out infinite alternate;
         }
         &-3 {
             width: 15.85vw;
             right: 11.95vw;
             bottom: 8.61vw;
+            animation: move-1 5s ease-in-out infinite alternate;
         }
     }
     @media screen and (max-width: 1700px) {
@@ -754,6 +761,24 @@ img {
         }
         &_plant {
         }
+    }
+}
+
+@keyframes move-1 {
+    0% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(5%);
+    }
+}
+
+@keyframes move-2 {
+    0% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(-5%);
     }
 }
 
@@ -1202,8 +1227,6 @@ img {
         margin-bottom: 30px;
     }
     .row {
-        // margin-left: -40px;
-        // margin-right: -40px;
         >div {
             padding-left: 40px;
             padding-right: 40px;
@@ -1466,6 +1489,7 @@ img {
             font-weight: 300;
             letter-spacing: 0.3em;
             margin-bottom: 20px;
+            transition: $transition-common;
             .octagon {
                 position: absolute;
                 width: 100%;
@@ -1493,6 +1517,9 @@ img {
                     }
                 }
             }
+            &:hover {
+                color: $primary-500;
+            }
         }
     }
     &_arrow {
@@ -1513,6 +1540,10 @@ img {
         }
         &-next {
             right: 0;
+        }
+        &.swiper-button-disabled {
+            opacity: 0.5;
+            cursor: default;
         }
     }
     &_pagination {
@@ -2275,6 +2306,9 @@ img {
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
     &_plant {
         &-1 {
@@ -2314,6 +2348,11 @@ img {
             }
             &_inner {
                 width: calc(100% - 90px);
+            }
+        }
+        &_textarea {
+            textarea {
+                font-size: 12px;
             }
         }
         #submit {
