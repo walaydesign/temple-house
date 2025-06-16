@@ -92,6 +92,20 @@ var swiperBuilding = new Swiper(".building_swiper", {
     },
 })
 
+var swiperSmallisbig = new Swiper(".smallisbig_swiper", {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: "#smallisbig_swiper-next",
+        prevEl: "#smallisbig_swiper-prev",
+    },
+    speed: 1000,
+    allowTouchMove: false,
+    pagination: {
+        el: "#smallisbig_swiper-pagination",
+        clickable: true,
+    },
+})
+
 
 
 
