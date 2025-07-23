@@ -283,10 +283,22 @@ $(window).on("resize", function() {
 mapResize();
 
 function mapResize() {
-    if($(window).width() <= 991) {
-        let mapWidth = $(".map_wrap_pic").height() * 1.79;
+    if($(window).width() <= 767) {
+        let mapWidth = $(".map_wrap_pic").height() * 1.44;
         let windowWidth = $(window).width();
         let mapX = (mapWidth - windowWidth ) / 2;
         $(".map_wrap").animate({scrollLeft: mapX});
     }
 }
+
+$(".map_arrow").click(function () {
+    let offset = $(window).width() * 0.3;
+    let currentX = ($(".map_wrap_pic").offset().left) * (-1);
+    console.log("offset=" + offset + ",currentX=" + currentX);
+    if ($(this).hasClass("map_arrow-prev")) {
+        offset = currentX - offset;
+    } else if ($(this).hasClass("map_arrow-next")) {
+        offset = currentX + offset;
+    }
+    $(".map_wrap").animate({ scrollLeft: offset });
+});

@@ -57,21 +57,21 @@
         />
         <img class="deco kv_plant-1" src="./public/img/plant-1.webp" alt="" />
         <img class="deco kv_plant-2" src="./public/img/plant-2.webp" alt="" />
-        <img
-          class="deco kv_plant-3 d-md-none"
-          src="./public/img/plant-1.webp"
-          alt=""
-        />
+        <!-- <img class="deco kv_plant-3 d-md-none" src="./public/img/plant-1.webp" alt=""/> -->
+        <img class="deco kv_bird" src="./public/img/bird.webp" alt="" data-aos="fade-down-left" data-aos-duration="1000" />
         <div class="kv_slogan" data-aos="zoom-in" data-aos-duration="1000">
           <h2 class="kv_slogan_small">SMALL</h2>
-          <h2>
+          <h2 class="kv_slogan_middle">
             <span class="kv_slogan_is">IS</span>
             <span class="kv_slogan_king">小宅之王</span>
           </h2>
-          <h2>
-            <span class="kv_slogan_big">BIG</span
-            ><span class="kv_slogan_dream">放大夢想</span>
-          </h2>
+          <div class="kv_slogan_bottom d-xxl-flex">
+            <h2>
+              <span class="kv_slogan_big">BIG</span>
+              <span class="kv_slogan_dream">放大夢想</span>
+            </h2>
+            <h3><span class="highlight">限量<img src="./public/img/rectangle.webp" alt=""></span>早鳥優惠</h3>
+          </div>
         </div>
         <div class="kv_info">
           <div
@@ -107,7 +107,28 @@
         </div>
       </div>
 
-      <div class="location" id="location">
+      <div class="loca">
+        <div class="map_wrap-wrap d-md-none">
+          <div class="map_wrap">
+            <img class="map_wrap_pic" src="./public/img/map-m.webp" alt="">
+          </div>
+          <img class="map_arrow map_arrow-prev" src="./public/img/arrow-prev.svg" alt="">
+          <img class="map_arrow map_arrow-next" src="./public/img/arrow-next.svg" alt="">
+        </div>
+        <img class="w-100 d-md-block d-none" src="./public/img/location-bg.webp" alt="">
+        <div class="loca_title" data-aos="fade-up" data-aos-duration="1000">
+          <div class="loca_title_ch">
+            <ul class="location_title_ch title-ch-wrap">
+              <li><h2 class="title-ch">黃金地段</h2></li>
+              <li><h2 class="title-ch">⽂化與便利並存</h2></li>
+            </ul>
+            <h3>大溪正樞繁華境 百年藏富員樹林</h3>
+          </div>
+          <img src="./public/img/location-title.svg" alt="">
+        </div>
+      </div>
+
+      <div class="location d-none" id="location">
         <div class="title-wrap title-left d-xxl-none">
           <img class="title-en" src="./public/img/title-location.svg" alt="" />
           <div class="title-line">
@@ -142,6 +163,544 @@
           src="./public/img/plant-1.webp"
           alt=""
         />
+      </div>
+
+      <div class="smallisbig">
+        <div class="title-wrap title-left">
+          <img class="title-en d-md-block d-none" src="./public/img/title-smallisbig.svg"/>
+          <img class="title-en d-md-none" src="./public/img/title-smallisbig-m.svg"/>
+          <div class="title-line">
+            <img src="./public/img/title-square.webp" alt="" />
+          </div>
+        </div>
+        <div class="container">
+          <div class="swiper-container smallisbig_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider">
+                  <div class="slider_text">
+                    <div class="slider_text_inner">
+                      <div class="">
+                        <h2
+                          class="title-ch"
+                          data-aos="fade-up"
+                          data-aos-duration="1000"
+                        >
+                          <span>
+                            小宅時代
+                            <div class="square"></div>
+                          </span>
+                          抗通膨利器
+                          <img
+                            class="d-xl-block d-none"
+                            src="./public/img/plant-1.webp"
+                            alt=""
+                          />
+                        </h2>
+                        <h3>上班族輕鬆變房東！</h3>
+                      </div>
+                      <div class="smallisbig_list rich">
+                        <img src="./public/img/smallisbig-subtitle.svg" alt="" class="smallisbig_list_title">
+                        <ul>
+                          <li>
+                            <div class="octagon">
+                              <div class="octagon_wrapper">
+                                <div class="octagon_inner">1.房租變儲蓄  存第一桶金</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="octagon">
+                              <div class="octagon_wrapper">
+                                <div class="octagon_inner">2.資產升級  創造被動收入</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="octagon">
+                              <div class="octagon_wrapper">
+                                <div class="octagon_inner">3.一屋雙享  上班族變房東</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="octagon">
+                              <div class="octagon_wrapper">
+                                <div class="octagon_inner">4.換新換好  樓梯換電梯</div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="octagon">
+                              <div class="octagon_wrapper">
+                                <div class="octagon_inner">5.孩子成年禮  翻轉未來！</div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                        <!-- <div class="smallisbig_list_item rich">
+                          <p>小宅之王</p>
+                          <img
+                            class="smallisbig_triangle"
+                            src="./public/img/triangle.svg"
+                            alt=""
+                          />
+                          <div class="smallisbig_rich">
+                            <p class="smallisbig_rich_num">5</p>
+                            <p class="smallisbig_rich_ch">大智富術</p>
+                          </div>
+                        </div> -->
+                        <!-- <img
+                          class="smallisbig_plant-4 d-xl-none"
+                          src="./public/img/plant-1.webp"
+                          alt=""
+                        /> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider_pic">
+                    <div class="smallisbig_pic">
+                      <img src="./public/img/smallisbig.webp" alt="" />
+                      <p class="remark">情境示意圖</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="swiper-slide">
+                <div class="slider">
+                  <div class="slider_text">
+                    <div class="slider_text_inner">
+                      <div class="smallisbig_rich_title">
+                        <div class="smallisbig_rich">
+                          <p class="smallisbig_rich_num">5</p>
+                          <p class="smallisbig_rich_ch">大智富術</p>
+                        </div>
+                      </div>
+                      <div class="smallisbig_list">
+                        <div class="smallisbig_list_item content">
+                          <p>房租變儲蓄</p>
+                          <p>存第一桶金</p>
+                        </div>
+                        <div class="smallisbig_list_item content">
+                          <p>資產升級</p>
+                          <p>創造被動收入</p>
+                        </div>
+                        <div class="smallisbig_list_item content">
+                          <p>一屋雙享</p>
+                          <p>上班族變房東</p>
+                        </div>
+                        <div class="smallisbig_list_item content">
+                          <p>換新換好</p>
+                          <p>樓梯換電梯</p>
+                        </div>
+                        <div class="smallisbig_list_item content">
+                          <p>孩子成年禮</p>
+                          <p>翻轉未來！</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider_pic">
+                    <div class="smallisbig_pic">
+                      <img src="./public/img/smallisbig-pic-2.webp" alt="" />
+                      <p class="remark">情境示意圖</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <!-- <div
+              class="slider_arrow slider_arrow-prev"
+              id="smallisbig_swiper-prev"
+            >
+              <img src="./public/img/slider-prev.svg" alt="" />
+            </div>
+            <div
+              class="slider_arrow slider_arrow-next"
+              id="smallisbig_swiper-next"
+            >
+              <img src="./public/img/slider-next.svg" alt="" />
+            </div>
+            <div
+              class="slider_pagination"
+              id="smallisbig_swiper-pagination"
+            ></div> -->
+          </div>
+        </div>
+        <img
+          class="smallisbig_plant-3 deco d-xl-none"
+          src="./public/img/plant-2.webp"
+          alt=""
+        />
+        <img
+          class="smallisbig_plant-5 deco"
+          src="./public/img/plant-1.webp"
+          alt=""
+        />
+        <!-- <img class="smallisbig_plant-2 deco d-xl-block d-none" src="./public/img/plant-2.webp"/> -->
+      </div>
+
+      <div class="building" id="building">
+        <div class="title-wrap title-right">
+          <img class="building_plant deco d-md-block d-none" src="./public/img/plant-2.webp" alt="">
+          <div class="title-line">
+            <img src="./public/img/title-square.webp" alt="" />
+          </div>
+          <img class="title-en" src="./public/img/title-building.svg" alt="" />
+        </div>
+        <div class="container">
+          <div class="building_text">
+            <div class="building_title">
+              <img src="./public/img/plant-1.webp" alt="" />
+              <h2
+                class="title-ch d-lg-block d-none"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                當代菁典<br />菁品建築
+              </h2>
+              <ul
+                class="title-ch-wrap d-lg-none"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                <li><h2 class="title-ch">當代菁典</h2></li>
+                <li><h2 class="title-ch">菁品建築</h2></li>
+              </ul>
+            </div>
+            <div class="building_info">
+              <div
+                class="building_info_item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
+                <h3>坪效最佳化</h3>
+                <p>14-15坪精巧設計開放式格局空間利⽤極⼤化</p>
+              </div>
+              <div
+                class="building_info_item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
+                <h3>高質感裝潢</h3>
+                <p>採光佳、通風良好，居住舒適度⼤提升</p>
+              </div>
+              <div
+                class="building_info_item"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+              >
+                <h3>安全性高</h3>
+                <p>現代化建築，社區管理完善住⼾安⼼</p>
+              </div>
+            </div>
+            <p class="building_remark d-lg-block d-none">
+              本圖僅供參考，實際圖面以使用執照核准圖為準<br />
+              格局及建材依照房屋土地預定買賣契約書為依據。
+            </p>
+          </div>
+          <div class="building_pic">
+            <div class="swiper-container building_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="building_tag">
+                    <div class="octagon octagon--blue">
+                      <div class="octagon_wrapper">
+                        <div class="octagon_inner">舒適1大房</div>
+                      </div>
+                    </div>
+                    <div class="octagon octagon--orange">
+                      <div class="octagon_wrapper">
+                        <div class="octagon_inner">
+                          3D室內圖<img
+                            src="./public/img/line-triangle.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      href="https://vr.3d66.com/next/vr/view/6760647"
+                      target="_blank"
+                      class="building_tag_btn octagon octagon--blue"
+                    >
+                      <div class="octagon_wrapper">
+                        <div class="octagon_inner">
+                          720環景<img
+                            src="./public/img/line-triangle.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <img
+                    class="w-100"
+                    src="./public/img/building-1.webp"
+                    alt=""
+                  />
+                  <div class="building_name">
+                    <h3><span class="highlight">A</span>戶 傢俱配置圖</h3>
+                    <div class="building_name_line"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="building_tag">
+                    <div class="octagon octagon--blue">
+                      <div class="octagon_wrapper">
+                        <div class="octagon_inner">精緻1+1房</div>
+                      </div>
+                    </div>
+                    <div class="octagon octagon--orange">
+                      <div class="octagon_wrapper">
+                        <div class="octagon_inner">
+                          3D室內圖<img
+                            src="./public/img/line-triangle.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      href="https://vr.3d66.com/next/vr/view/6760644"
+                      target="_blank"
+                      class="building_tag_btn octagon octagon--blue"
+                    >
+                      <div class="octagon_wrapper">
+                        <div class="octagon_inner">
+                          720環景<img
+                            src="./public/img/line-triangle.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <img
+                    class="w-100"
+                    src="./public/img/building-2.webp"
+                    alt=""
+                  />
+                  <div class="building_name">
+                    <h3><span class="highlight">B</span>戶 傢俱配置圖</h3>
+                    <div class="building_name_line"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="building_tag">
+                    <div class="octagon octagon--blue">
+                      <div class="octagon_wrapper">
+                        <div class="octagon_inner">寬 敞 2 房</div>
+                      </div>
+                    </div>
+                    <div class="octagon octagon--orange">
+                      <div class="octagon_wrapper">
+                        <div class="octagon_inner">
+                          3D室內圖<img
+                            src="./public/img/line-triangle.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      href="https://vr.3d66.com/next/vr/view/6760637"
+                      target="_blank"
+                      class="building_tag_btn octagon octagon--blue"
+                    >
+                      <div class="octagon_wrapper">
+                        <div class="octagon_inner">
+                          720環景<img
+                            src="./public/img/line-triangle.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <img
+                    class="w-100"
+                    src="./public/img/building-3.webp"
+                    alt=""
+                  />
+                  <div class="building_name">
+                    <h3><span class="highlight">B</span>戶 傢俱配置圖</h3>
+                    <div class="building_name_line"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="building_swiper_arrow">
+                <div class="building_swiper-prev">
+                  <svg
+                    id="_圖層_2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 17.98 25.4"
+                  >
+                    <defs></defs>
+                    <g id="_文字">
+                      <polyline
+                        class="cls-1"
+                        points="17.98 0 0 12.7 17.98 25.4"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <div class="building_swiper-next">
+                  <svg
+                    id="_圖層_2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 17.98 25.4"
+                  >
+                    <defs></defs>
+                    <g id="_文字">
+                      <polyline class="cls-1" points="0 0 17.98 12.7 0 25.4" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <p class="building_remark d-lg-none">
+              本圖僅供參考，實際圖面以使用執照核准圖為準<br />
+              格局及建材依照房屋土地預定買賣契約書為依據。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="architecture" id="architecture">
+        <div class="title-wrap title-left">
+          <img class="title-en" src="./public/img/title-architecture.svg" alt="" />
+          <div class="title-line">
+            <img src="./public/img/title-square.webp" alt="" />
+          </div>
+          <img class="architecture_plant-3 deco" src="./public/img/plant-1.webp" alt="">
+        </div>
+        <!-- <div class="title-wrap title-left d-lg-none">
+          <img
+            class="title-en"
+            src="./public/img/title-architecture.svg"
+            alt=""
+          />
+          <div class="title-line">
+            <img src="./public/img/title-square.webp" alt="" />
+          </div>
+        </div>
+        <div class="container d-lg-block d-none">
+          <img
+            class="title-en"
+            src="./public/img/title-architecture.svg"
+            alt=""
+          />
+        </div> -->
+        <!-- <div class="title-wrap title-left">
+          <ul class="title-ch-wrap" data-aos="fade-up" data-aos-duration="1000">
+            <li><h2 class="title-ch">復古新創意</h2></li>
+            <li><h2 class="title-ch">⼈⽂新時尚</h2></li>
+          </ul>
+          <div class="title-line d-lg-block d-none">
+            <img src="./public/img/title-square.webp" alt="" />
+            <img
+              class="deco title-line_plant"
+              src="./public/img/plant-3.webp"
+              alt=""
+            />
+          </div>
+        </div> -->
+        <div class="container">
+          <div class="architecture_buy">
+            <div class="architecture_buy_text" data-aos="fade-up" data-aos-duration="1000">
+              <ul class="title-ch-wrap d-lg-none">
+                <li><h2 class="title-ch">復古新創意</h2></li>
+                <li><h2 class="title-ch">⼈⽂新時尚</h2></li>
+              </ul>
+              <h2 class="title-ch d-lg-block d-none">復古新創意<br>⼈⽂新時尚</h2>
+              <div class="architecture_buy_content">
+                <div class="architecture_buy_highlight">
+                  <img src="./public/img/architecture-line-top.webp" alt="">
+                  <h3>八大必買</h3>
+                  <img src="./public/img/architecture-line-bottom.webp" alt="">
+                </div>
+                <img class="architecture_buy_bigdream" src="./public/img/bigdream.svg" alt="">
+              </div>
+            </div>
+            <div class="architecture_buy_pic">
+              <img class="w-100" src="./public/img/architecture-pic.webp" alt="">
+            </div>
+            <img class="architecture_buy_plant deco d-lg-block d-none" src="./public/img/plant-2.webp" alt="">
+          </div>
+        </div>
+        <div class="container">
+          <img class="architecture_logo d-lg-none" src="./public/img/logo-2.svg" alt="" />
+          <img class="w-100 mb-3 d-lg-block d-none" src="./public/img/368-title.webp" alt="">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="architecture_item">
+                <div class="architecture_text">
+                  <h3>三心</h3>
+                  <div class="square"></div>
+                  <p>真、善、美</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="architecture_text">
+                <h3>六藝</h3>
+                <div class="square"></div>
+                <p>
+                  美學、⼈本、智慧<br />
+                  健康、進化、永續
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="architecture_text last">
+                <h3>八築</h3>
+                <div class="square"></div>
+                <p>
+                  安全、安⼼、安靜、好⽔<br />
+                  活氧、無毒、舒適、友善
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="architecture_pic-wrap">
+                <div class="architecture_pic">
+                  <img src="./public/img/architecture-1.webp" alt="" />
+                </div>
+                <h4 class="architecture_place">八德</h4>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="architecture_pic-wrap">
+                <div class="architecture_pic">
+                  <img src="./public/img/architecture-2.webp" alt="" />
+                </div>
+                <h4 class="architecture_place">采舍</h4>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="architecture_pic-wrap">
+                <div class="architecture_pic">
+                  <img src="./public/img/architecture-3.webp" alt="" />
+                </div>
+                <h4 class="architecture_place">采舍龍潭</h4>
+              </div>
+            </div>
+            <!-- <img
+              class="deco architecture_plant-1 d-lg-none"
+              src="./public/img/plant-3.webp"
+              alt=""
+            /> -->
+            <img
+              class="deco architecture_plant-2 d-lg-none"
+              src="./public/img/plant-1.webp"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
 
       <div class="culture">
@@ -298,7 +857,7 @@
           </div>
         </div>
         <img
-          class="deco culture_plant"
+          class="deco culture_plant d-lg-block d-none"
           src="./public/img/plant-2.webp"
           alt=""
         />
@@ -609,7 +1168,7 @@
             </div>
           </div>
         </div>
-        <div class="slider convenient">
+        <!-- <div class="slider convenient">
           <div class="container">
             <div class="slider_pic">
               <div class="d-lg-none">
@@ -718,452 +1277,11 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="smallisbig">
-        <div class="title-wrap title-left">
-          <img
-            class="title-en d-md-block d-none"
-            src="./public/img/title-smallisbig.svg"
-            alt=""
-          />
-          <img
-            class="title-en d-md-none"
-            src="./public/img/title-smallisbig-m.svg"
-            alt=""
-          />
-          <div class="title-line">
-            <img src="./public/img/title-square.webp" alt="" />
-          </div>
-        </div>
-        <div class="container">
-          <div class="swiper-container smallisbig_swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="slider">
-                  <div class="slider_text">
-                    <div class="slider_text_inner">
-                      <div class="">
-                        <h2
-                          class="title-ch"
-                          data-aos="fade-up"
-                          data-aos-duration="1000"
-                        >
-                          <span>
-                            小宅時代
-                            <div class="square"></div>
-                          </span>
-                          抗通膨利器
-                          <img class="d-xl-block d-none" src="./public/img/plant-1.webp" alt="" />
-                        </h2>
-                        <h3>上班族輕鬆變房東！</h3>
-                      </div>
-                      <div class="smallisbig_list rich">
-                        <div class="smallisbig_list_item rich">
-                          <p>小宅之王</p>
-                          <img
-                            class="smallisbig_triangle"
-                            src="./public/img/triangle.svg"
-                            alt=""
-                          />
-                          <div class="smallisbig_rich">
-                            <p class="smallisbig_rich_num">5</p>
-                            <p class="smallisbig_rich_ch">大智富術</p>
-                          </div>
-                        </div>
-                        <img class="smallisbig_plant-4 d-xl-none" src="./public/img/plant-1.webp" alt="">
-                      </div>
-                      <img
-                        class="smallisbig_plant-2 d-xl-block d-none"
-                        src="./public/img/plant-2.webp"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div class="slider_pic">
-                    <div class="smallisbig_pic">
-                      <img src="./public/img/smallisbig-pic-1.webp" alt="" />
-                      <p class="remark">情境示意圖</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slider">
-                  <div class="slider_text">
-                    <div class="slider_text_inner">
-                      <div class="smallisbig_rich_title">
-                        <div class="smallisbig_rich">
-                          <p class="smallisbig_rich_num">5</p>
-                          <p class="smallisbig_rich_ch">大智富術</p>
-                        </div>
-                      </div>
-                      <div class="smallisbig_list">
-                        <div class="smallisbig_list_item content">
-                            <p>房租變儲蓄</p>
-                            <p>存第一桶金</p>
-                        </div>
-                        <div class="smallisbig_list_item content">
-                            <p>資產升級</p>
-                            <p>創造被動收入</p>
-                        </div>
-                        <div class="smallisbig_list_item content">
-                            <p>一屋雙享</p>
-                            <p>上班族變房東</p>
-                        </div>
-                        <div class="smallisbig_list_item content">
-                            <p>換新換好</p>
-                            <p>樓梯換電梯</p>
-                        </div>
-                        <div class="smallisbig_list_item content">
-                            <p>孩子成年禮</p>
-                            <p>翻轉未來！</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider_pic">
-                    <div class="smallisbig_pic">
-                      <img src="./public/img/smallisbig-pic-2.webp" alt="" />
-                      <p class="remark">情境示意圖</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="slider_arrow slider_arrow-prev"
-              id="smallisbig_swiper-prev"
-            >
-              <img src="./public/img/slider-prev.svg" alt="" />
-            </div>
-            <div
-              class="slider_arrow slider_arrow-next"
-              id="smallisbig_swiper-next"
-            >
-              <img src="./public/img/slider-next.svg" alt="" />
-            </div>
-            <div
-              class="slider_pagination"
-              id="smallisbig_swiper-pagination"
-            ></div>
-          </div>
-        </div>
-        <!-- <img
-          class="smallisbig_plant d-lg-none"
-          src="./public/img/plant-2.webp"
-          alt=""
-        /> -->
-                      <img
-                        class="smallisbig_plant-3 deco d-xl-none"
-                        src="./public/img/plant-2.webp"
-                        alt=""
-                      />
-      </div>
-
-      <div class="building" id="building">
-        <div class="title-wrap title-right">
-          <div class="title-line">
-            <img src="./public/img/title-square.webp" alt="" />
-          </div>
-          <img class="title-en" src="./public/img/title-building.svg" alt="" />
-        </div>
-        <div class="container">
-          <div class="building_text">
-            <div class="building_title">
-              <img src="./public/img/plant-1.webp" alt="" />
-              <h2
-                class="title-ch d-lg-block d-none"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                當代菁典<br />菁品建築
-              </h2>
-              <ul
-                class="title-ch-wrap d-lg-none"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >
-                <li><h2 class="title-ch">當代菁典</h2></li>
-                <li><h2 class="title-ch">菁品建築</h2></li>
-              </ul>
-            </div>
-            <div class="building_info">
-              <div
-                class="building_info_item"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="100"
-              >
-                <h3>坪效最佳化</h3>
-                <p>14-15坪精巧設計開放式格局空間利⽤極⼤化</p>
-              </div>
-              <div
-                class="building_info_item"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-              >
-                <h3>高質感裝潢</h3>
-                <p>採光佳、通風良好，居住舒適度⼤提升</p>
-              </div>
-              <div
-                class="building_info_item"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="300"
-              >
-                <h3>安全性高</h3>
-                <p>現代化建築，社區管理完善住⼾安⼼</p>
-              </div>
-            </div>
-            <p class="building_remark d-lg-block d-none">
-              本圖僅供參考，實際圖面以使用執照核准圖為準<br />
-              格局及建材依照房屋土地預定買賣契約書為依據。
-            </p>
-          </div>
-          <div class="building_pic">
-            <div class="swiper-container building_swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="building_tag">
-                    <div class="octagon octagon--blue">
-                      <div class="octagon_wrapper">
-                        <div class="octagon_inner">舒適1大房</div>
-                      </div>
-                    </div>
-                    <a
-                      href="https://vr.3d66.com/next/vr/view/6760647"
-                      target="_blank"
-                      class="building_tag_btn octagon octagon--orange"
-                    >
-                      <div class="octagon_wrapper">
-                        <div class="octagon_inner">
-                          720環景<img
-                            src="./public/img/line-triangle.svg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <img
-                    class="w-100"
-                    src="./public/img/building-1.webp"
-                    alt=""
-                  />
-                  <div class="building_name">
-                    <h3><span class="highlight">A</span>戶 傢俱配置圖</h3>
-                    <div class="building_name_line"></div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="building_tag">
-                    <div class="octagon octagon--blue">
-                      <div class="octagon_wrapper">
-                        <div class="octagon_inner">精緻1+1房</div>
-                      </div>
-                    </div>
-                    <a
-                      href="https://vr.3d66.com/next/vr/view/6760644"
-                      target="_blank"
-                      class="building_tag_btn octagon octagon--orange"
-                    >
-                      <div class="octagon_wrapper">
-                        <div class="octagon_inner">
-                          720環景<img
-                            src="./public/img/line-triangle.svg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <img
-                    class="w-100"
-                    src="./public/img/building-2.webp"
-                    alt=""
-                  />
-                  <div class="building_name">
-                    <h3><span class="highlight">B</span>戶 傢俱配置圖</h3>
-                    <div class="building_name_line"></div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="building_tag">
-                    <div class="octagon octagon--blue">
-                      <div class="octagon_wrapper">
-                        <div class="octagon_inner">寬 敞 2 房</div>
-                      </div>
-                    </div>
-                    <a
-                      href="https://vr.3d66.com/next/vr/view/6760637"
-                      target="_blank"
-                      class="building_tag_btn octagon octagon--orange"
-                    >
-                      <div class="octagon_wrapper">
-                        <div class="octagon_inner">
-                          720環景<img
-                            src="./public/img/line-triangle.svg"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <img
-                    class="w-100"
-                    src="./public/img/building-3.webp"
-                    alt=""
-                  />
-                  <div class="building_name">
-                    <h3><span class="highlight">B</span>戶 傢俱配置圖</h3>
-                    <div class="building_name_line"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="building_swiper_arrow">
-                <div class="building_swiper-prev">
-                  <svg
-                    id="_圖層_2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 17.98 25.4"
-                  >
-                    <defs></defs>
-                    <g id="_文字">
-                      <polyline
-                        class="cls-1"
-                        points="17.98 0 0 12.7 17.98 25.4"
-                      />
-                    </g>
-                  </svg>
-                </div>
-                <div class="building_swiper-next">
-                  <svg
-                    id="_圖層_2"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 17.98 25.4"
-                  >
-                    <defs></defs>
-                    <g id="_文字">
-                      <polyline class="cls-1" points="0 0 17.98 12.7 0 25.4" />
-                    </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <p class="building_remark d-lg-none">
-              本圖僅供參考，實際圖面以使用執照核准圖為準<br />
-              格局及建材依照房屋土地預定買賣契約書為依據。
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="architecture" id="architecture">
-        <div class="title-wrap title-left d-lg-none">
-          <img
-            class="title-en"
-            src="./public/img/title-architecture.svg"
-            alt=""
-          />
-          <div class="title-line">
-            <img src="./public/img/title-square.webp" alt="" />
-          </div>
-        </div>
-        <div class="container d-lg-block d-none">
-          <img
-            class="title-en"
-            src="./public/img/title-architecture.svg"
-            alt=""
-          />
-        </div>
-        <div class="title-wrap title-left">
-          <ul class="title-ch-wrap" data-aos="fade-up" data-aos-duration="1000">
-            <li><h2 class="title-ch">復古新創意</h2></li>
-            <li><h2 class="title-ch">⼈⽂新時尚</h2></li>
-          </ul>
-          <div class="title-line d-lg-block d-none">
-            <img src="./public/img/title-square.webp" alt="" />
-            <img
-              class="deco title-line_plant"
-              src="./public/img/plant-3.webp"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="container">
-          <img class="architecture_logo" src="./public/img/logo-2.svg" alt="" />
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="architecture_item">
-                <div class="architecture_text">
-                  <h3>三心</h3>
-                  <div class="square"></div>
-                  <p>真、善、美</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="architecture_text">
-                <h3>六藝</h3>
-                <div class="square"></div>
-                <p>
-                  美學、⼈本、智慧<br />
-                  健康、進化、永續
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="architecture_text last">
-                <h3>八築</h3>
-                <div class="square"></div>
-                <p>
-                  安全、安⼼、安靜、好⽔<br />
-                  活氧、無毒、舒適、友善
-                </p>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="architecture_pic-wrap">
-                <div class="architecture_pic">
-                  <img src="./public/img/architecture-1.webp" alt="" />
-                </div>
-                <h4 class="architecture_place">八德</h4>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="architecture_pic-wrap">
-                <div class="architecture_pic">
-                  <img src="./public/img/architecture-2.webp" alt="" />
-                </div>
-                <h4 class="architecture_place">采舍</h4>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="architecture_pic-wrap">
-                <div class="architecture_pic">
-                  <img src="./public/img/architecture-3.webp" alt="" />
-                </div>
-                <h4 class="architecture_place">采舍龍潭</h4>
-              </div>
-            </div>
-            <img
-              class="deco architecture_plant-1 d-lg-none"
-              src="./public/img/plant-3.webp"
-              alt=""
-            />
-            <img
-              class="deco architecture_plant-2 d-lg-none"
-              src="./public/img/plant-1.webp"
-              alt=""
-            />
-          </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="contact" id="contact">
+        <img class="contact_line d-lg-block d-none" src="./public/img/line.webp" alt="">
         <div class="container">
           <div class="contact_title">
             <h2>預約賞屋</h2>
