@@ -80,17 +80,18 @@ var swiperConvenient = new Swiper(".convenient_swiper", {
 })
 
 var swiperBuilding = new Swiper(".building_swiper", {
-    slidesPerView: 1,
-    navigation: {
-        nextEl: ".building_swiper-next",
-        prevEl: ".building_swiper-prev",
-    },
-    effect: "fade",
-    speed: 1000,
-    fadeEffect: {
-        crossFade: true,
-    },
-})
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".building_swiper-next",
+    prevEl: ".building_swiper-prev",
+  },
+  allowTouchMove: false,
+  // effect: "fade",
+  speed: 1000,
+  // fadeEffect: {
+  //     crossFade: true,
+  // },
+});
 
 var swiperSmallisbig = new Swiper(".smallisbig_swiper", {
     slidesPerView: 1,
@@ -105,16 +106,6 @@ var swiperSmallisbig = new Swiper(".smallisbig_swiper", {
         clickable: true,
     },
 })
-
-
-
-
-
-
-
-
-
-
 
 
 var swiperCore = new Swiper(".core_swiper", {
@@ -261,6 +252,48 @@ var swiperArrangeText = new Swiper(".arrange_swiper-text", {
         clickable: true,
     },
 })
+
+var swiperBuilding3D_1 = new Swiper(".building_pic_swiper-1", {
+  slidesPerView: 1,
+  speed: 800,
+  allowTouchMove: false,
+  observeParents: true,
+  observer: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiperBuilding3D_2 = new Swiper(".building_pic_swiper-2", {
+  slidesPerView: 1,
+  speed: 800,
+  allowTouchMove: false,
+  observeParents: true,
+  observer: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiperBuilding3D_3 = new Swiper(".building_pic_swiper-3", {
+  slidesPerView: 1,
+  speed: 800,
+  allowTouchMove: false,
+  observeParents: true,
+  observer: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+$(".building_tag_btn.is-tab").click(function () {
+    let target = $(this).data("target");
+    $(this).parents(".swiper-slide").find(".building_pic_main_item").hide();
+    $(target).show();
+});
 
 function sendEmail(){
     Email.send({
