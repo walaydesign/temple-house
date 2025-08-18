@@ -298,7 +298,7 @@ $(".building_tag_btn.is-tab").click(function () {
 function sendEmail(){
     Email.send({
         SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
-        To : "zhulixdesign@gmail.com, zhuli705098@gmail.com, a3202443aa@yahoo.com.tw, dtweryd@gmail.com",
+        To : "zhulixdesign@gmail.com, zhuliservice@gmail.com",
         From : "walayydesign@gmail.com",
         Subject : "齋明居預約賞屋",
         Body : "姓名:" + document.getElementById("name").value
