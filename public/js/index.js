@@ -300,7 +300,7 @@ function sendEmail(){
         SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
         To : "zhulixdesign@gmail.com, zhuli705098@gmail.com, a3202443aa@yahoo.com.tw, dtweryd@gmail.com",
         From : "walayydesign@gmail.com",
-        Subject : "航綻甜心預約賞屋",
+        Subject : "齋明居預約賞屋",
         Body : "姓名:" + document.getElementById("name").value
                 + "<br>電話:" + document.getElementById("phone").value
                 + "<br>需求房型:" + document.getElementById("type").value
