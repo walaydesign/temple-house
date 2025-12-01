@@ -1376,15 +1376,14 @@
             </div>
           </div>
           <form
-            class="contact_form"
-            onsubmit="sendEmail(); reset(); return false"
+            class="contact_form" id="contact-form"
           >
             <div class="row">
               <div class="col-lg-6">
                 <div class="contact_input">
                   <label for=""><span>姓</span><span>名</span></label>
                   <div class="contact_input_inner">
-                    <input type="text" id="name" required />
+                    <input type="text" id="name" name="name" required />
                   </div>
                 </div>
                 <div class="contact_input">
@@ -1393,13 +1392,13 @@
                     ><span>話</span></label
                   >
                   <div class="contact_input_inner">
-                    <input type="phone" id="phone" required />
+                    <input type="phone" id="phone" name="phone" required />
                   </div>
                 </div>
                 <div class="contact_input">
                   <label for=""><span>LINE</span><span>ID</span></label>
                   <div class="contact_input_inner">
-                    <input type="text" id="line" />
+                    <input type="text" id="line" name="line" />
                   </div>
                 </div>
                 <div class="contact_input">
@@ -1407,7 +1406,7 @@
                     ><span>居</span><span>住</span><span>地</span></label
                   >
                   <div class="contact_input_inner">
-                    <input type="text" id="area" placeholder="縣市/鄉鎮" />
+                    <input type="text" id="area" name="area" placeholder="縣市/鄉鎮" />
                   </div>
                 </div>
               </div>
@@ -1417,7 +1416,7 @@
                     <div class="contact_textarea_inner">
                       <textarea
                         placeholder="請輸入您的留言(選填)"
-                        name=""
+                        name="message"
                         id="message"
                         cols="30"
                         rows="5"
@@ -1558,7 +1557,7 @@
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
     <script src="./public/js/aos/aos.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js?v=20240527"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="./public/js/index.js"></script>
   </body>
 </html>

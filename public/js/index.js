@@ -295,24 +295,6 @@ $(".building_tag_btn.is-tab").click(function () {
     $(target).show();
 });
 
-function sendEmail(){
-    Email.send({
-      SecureToken: "8207c7d7-4a6c-4797-870d-d16ee71023ce",
-      To: "zhulixdesign@gmail.com, zhuliservice@gmail.com, a3150666@gmail.com, a3150666@gmail.com",
-      From: "walayydesign@gmail.com",
-      Subject: "齋明居預約賞屋",
-      Body:
-        "姓名:" +
-        document.getElementById("name").value +
-        "<br>電話:" +
-        document.getElementById("phone").value +
-        "<br>需求房型:" +
-        document.getElementById("type").value +
-        "<br>聯繫內容:" +
-        document.getElementById("content").value,
-    }).then((message) => alert("感謝您的來信！我們很快就會和您聯繫！"));
-}
-
 $(window).on("resize", function() {
     mapResize();
 })
@@ -330,7 +312,6 @@ function mapResize() {
 $(".map_arrow").click(function () {
     let offset = $(window).width() * 0.3;
     let currentX = ($(".map_wrap_pic").offset().left) * (-1);
-    console.log("offset=" + offset + ",currentX=" + currentX);
     if ($(this).hasClass("map_arrow-prev")) {
         offset = currentX - offset;
     } else if ($(this).hasClass("map_arrow-next")) {
@@ -338,3 +319,23 @@ $(".map_arrow").click(function () {
     }
     $(".map_wrap").animate({ scrollLeft: offset });
 });
+
+(function () {
+  emailjs.init("3j4kNvskrhLw3SIso");
+})();
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_eyyx1dp", "template_y7my248", this).then(
+      () => {
+        alert("感謝您的來信！我們很快就會和您聯繫！");
+        this.reset();
+      },
+      (error) => {
+        alert("寄送失敗，請稍後再試");
+      }
+    );
+  });
